@@ -1,0 +1,160 @@
+body {
+    scroll-behavior: smooth;
+    font-family: Popins, monospace;
+    color: #fff;
+    width: 80%;
+    background-color: #000000;
+    box-sizing: border-box;
+    margin: auto; 
+}
+
+                     /*-----------------------------HEADER----------------------------------*/
+
+header {
+    position: relative;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top:0;
+    bottom: 10px;
+}
+
+nav {
+    width: 50%;
+    max-width: 500px;
+    height: 50px;
+}
+
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+  }
+
+nav > ul > li {
+    display: block;
+    margin: 0 0.2rem;
+	padding: 0.2rem;
+    list-style: none;
+    line-height: 10px;
+    text-align: center;
+}
+
+nav ul li::after{
+    content: ' ';
+    width: 0%;
+    height: 2px;
+    background: pink;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+nav ul li:hover::after {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color:aquamarine;
+}
+
+a:hover {
+    color: pink;
+}
+
+                /*--------------------------------SURVEY FORM-----------------------------------------*/
+
+#project-intro {
+    animation-name: anim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes anim {
+    0%{
+        color: pink;
+    }
+    50% {
+        color: skyblue;
+    }
+    100% {
+        color: lightskyblue;
+    }
+}
+
+#title {
+    text-align:center;
+}
+.mid-heading, #title {
+    height: 10px;
+    width: 100%;
+    padding: 10px;
+    color:aquamarine;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0; 
+  }
+.card {
+    padding-left: 10px;
+    border: 1px solid aquamarine;
+}
+
+.details {
+    font-style:italic;
+}
+
+
+input[type="text"], 
+input[type="number"],
+input[type="email"],
+select,
+textarea {
+    display: block;
+    margin: 10px 0 10px 0;
+    width: 60%;
+    min-height: 1.5em;
+}
+
+label {
+    display: block;
+}
+
+input:active{
+    color: aquamarine;
+}
+
+.card {
+    border-radius: 5px;
+    overflow: hidden;
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid white;
+    box-shadow: 50px 1opx #888888;
+}
+
+.new-line {
+    background-color: rgba(124, 121, 121, 0.8);;
+}
+input[type="submit"] {
+    display: block;
+    width: 50%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    color:#000000;
+    background-color: rgba(124, 121, 121, 0.8);
+    border-color: aquamarine;
+  }
+
+input[type="submit"]:hover {
+    transform: scale(1.1);
+}

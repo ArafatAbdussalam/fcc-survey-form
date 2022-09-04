@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="FreeCodeCamp Responsive Web Design Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>FreeCodeCamp Survey Form by Arafat</title>
+  </head>
+
+  <body>
+    <main>
+                    <!----------------------------HEADER-------------------------->
+
+        <header>
+            <h3 class="mid-heading">Arafat Abdussalam</h3>
+            <nav>
+                <ul>
+                    <li><a target="_blank" href="https://www.github.com/ArafatAbdussalam">Github</a></li>
+                    <li><a target="_blank" href="https://www.arafatsalam.hashnode.dev/">Hashnode</a></li>
+                    <li><a target="_blank" href="https://www.twitter.com/arafat_ssalam">Twitter</a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/arafat-abdussalam/">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <p id="project-intro">
+                Hi! I am Arafat Abdussalam, a Frontend Developer, Technical Writer and Open Source Contributor from Nigeria. 👩‍💻<br>
+                When I am not writing code, I can be found reading books on Psychology or Economics or Haha! You know, 
+                watching k-drama 'cause You Only Live Once! LOL! 😂 <br><br>
+                This is my survey form project on Freecodecamp Responsive Web Design curriculum.
+            </p>
+            <h1 id="title">Notifications Survey</h1>
+            <p id="description">We're working on our notification system (emails, push, etc.) to make 
+                our product work even better for you :) <br><br>                
+                The survey consists of several questions and usually takes 5-7 minutes to complete.
+            </p>
+        </section>
+                    <!---------------------------------SURVEY FORM------------------------------>
+
+        <section>
+            <form action="#" id="survey-form">
+                <fieldset>
+                  <div class="persona card">
+                    <h3 class="mid-heading">User Persona</h3>
+                    <label id="name-label">Enter your name: <input type="text" id="name" placeholder="Your response" required> </label>
+                    <label id="email-label">Enter your email: <input type="email" id="email" placeholder="Your response" required> </label>
+                    <label id="number-label">Enter your phone number: <input type="number" id="number" placeholder="Your response" min="9" max="14" required></label>
+                  </div>
+                
+                    <div class="card">
+                            <h3 class="mid-heading">Are you an admin or a member in RealtimeBoard?</h3> 
+                            <p class="details">An admin is a team creator and manages team size, members and billing settings.</p>
+                            <label>Admin<input name="admin-member" type="radio"></label> 
+                            <label>Member<input name="admin-member" type="radio"></label>
+                    </div>
+                
+                   <div class="card">
+                        <h3 class="mid-heading">How do you collaborate in RealtimeBoard?</h3>
+                        <p class="details">What is your major activity when working with content?</p>
+                        <label>Create and edit content<input name="a-b" type="radio"></label>
+                        <label>Comment and leave feedback<input name="a-b" type="radio"></label>
+                        <label>Just review created content<input name="a-b" type="radio"></label>
+                        <label>Others: <input class="persona" type="text"></label>
+                   </div>
+
+                    <div class="card">
+                        <h3 class="mid-heading">What type of Notifications are useful for you?</h3>
+                        <p class="details">Here's a list of different notifications in RealtimeBoard. Which of them
+                            are the most important to your workflow?
+                        </p>
+
+                        <table>
+                            <thead>
+                                <th></th>
+                                <th>Useful</th>
+                                <th>Useless</th>
+                            </thead>
+                            <tbody>
+                                <tr class="new-line">
+                                    <th>When new changes appear on the boards</th>
+                                    <td><input name="changes-no_changes" type="radio"></td>
+                                    <td><input name="changes-no_changes"type="radio"></td>
+                                </tr>
+                                <tr>
+                                    <th>When new comments appear on the boards</th>
+                                    <td><input name="comment-no_comment" type="radio"></td>
+                                    <td><input name="comment-no_comment" type="radio"></td>
+                                </tr>
+                                <tr class="new-line">
+                                    <th>When someone mentions you</th>
+                                    <td><input name="mention-no_mention" type="radio"></td>
+                                    <td><input name="mention-no_mention" type="radio"></td>
+                                </tr>
+                                <tr>
+                                    <th>When there are changes in your team (team size, number of active boards, etc.)</th>
+                                    <td><input name="team_change-no_team_change" type="radio"></td>
+                                    <td><input name="team_change-no_team_change" type="radio"></td>
+                                </tr>
+                                <tr class="new-line">
+                                    <th>When someone invites you to a board or a team</th>
+                                    <td><input name="invite-no_invite" type="radio"></td>
+                                    <td><input name="invite-no_invite" type="radio"></td>
+                                </tr>
+                                <tr>
+                                    <th>When someone requests access to your board or team</th>
+                                    <td><input name="request-no_request" type="radio"></td>
+                                    <td><input name="request-no_request" type="radio"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </fieldset>
+
+
+                <div class="card">
+                    <p id="terms">Do you agree with the following <a href="#">terms and conditions</a>?</p>
+                    <select>
+                        <option>choose your answer below:</option>
+                        <option>Yes, I agree</option>
+                        <option>No, I do not agree</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="card">
+                <p>If you'd like to provide more information, please leave a comment below: </p>
+                <textarea rows="7" cols="70" placeholder="Leave us a message here..."></textarea>
+            </div>
+            <div class="card">
+                <p>Will you like us to keep you updated via our communication channels?</p>
+                <label>Subscribe <input type="checkbox"></label>
+                <label>Do not Subscribe <input type="checkbox"></label>
+            </div>
+
+                    <!--------------------SUBMIT BUTTON------------------------------->
+           
+           <label><input type="submit" id="submit" value="Submit"></label>
+        </form>
+        </section>
+    </main>
+  </body>
+</html>
